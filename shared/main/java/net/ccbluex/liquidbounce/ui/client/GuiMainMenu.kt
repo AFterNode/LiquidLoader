@@ -38,7 +38,7 @@ class GuiMainMenu : WrappedGuiScreen() {
 
         RenderUtils.drawRect(representedScreen.width / 2.0f - 115, representedScreen.height / 4.0f + 35, representedScreen.width / 2.0f + 115, representedScreen.height / 4.0f + 175, Integer.MIN_VALUE)
 
-        Fonts.fontBold180.drawCenteredString("LiquidBounce", representedScreen.width / 2F, representedScreen.height / 8F, 4673984, true)
+        Fonts.fontBold180.drawCenteredString("LiquidLoader", representedScreen.width / 2F, representedScreen.height / 8F, 4673984, true)
 
         representedScreen.superDrawScreen(mouseX, mouseY, partialTicks)
     }

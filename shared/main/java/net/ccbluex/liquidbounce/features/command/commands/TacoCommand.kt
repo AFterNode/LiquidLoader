@@ -19,18 +19,18 @@ class TacoCommand : Command("taco"), Listenable {
     private var image = 0
     private var running = 0f
     private val tacoTextures = arrayOf(
-            classProvider.createResourceLocation("liquidbounce/taco/1.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/2.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/3.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/4.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/5.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/6.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/7.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/8.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/9.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/10.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/11.png"),
-            classProvider.createResourceLocation("liquidbounce/taco/12.png")
+            classProvider.createResourceLocation("liquidloader/taco/1.png"),
+            classProvider.createResourceLocation("liquidloader/taco/2.png"),
+            classProvider.createResourceLocation("liquidloader/taco/3.png"),
+            classProvider.createResourceLocation("liquidloader/taco/4.png"),
+            classProvider.createResourceLocation("liquidloader/taco/5.png"),
+            classProvider.createResourceLocation("liquidloader/taco/6.png"),
+            classProvider.createResourceLocation("liquidloader/taco/7.png"),
+            classProvider.createResourceLocation("liquidloader/taco/8.png"),
+            classProvider.createResourceLocation("liquidloader/taco/9.png"),
+            classProvider.createResourceLocation("liquidloader/taco/10.png"),
+            classProvider.createResourceLocation("liquidloader/taco/11.png"),
+            classProvider.createResourceLocation("liquidloader/taco/12.png")
     )
 
     init {

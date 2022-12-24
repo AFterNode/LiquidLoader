@@ -40,7 +40,7 @@ import net.ccbluex.liquidbounce.utils.misc.HttpUtils
 object LiquidBounce {
 
     // Client information
-    const val CLIENT_NAME = "LiquidBounce"
+    const val CLIENT_NAME = "LiquidLoader"
     const val CLIENT_VERSION = 73
     const val IN_DEV = true
     const val CLIENT_CREATOR = "CCBlueX"
