@@ -27,6 +27,7 @@ public class FileManager extends MinecraftInstance {
     public final File dir = new File(mc.getDataDir(), LiquidBounce.CLIENT_NAME + "-" + Backend.MINECRAFT_VERSION_MAJOR + "." + Backend.MINECRAFT_VERSION_MINOR);
     public final File fontsDir = new File(dir, "fonts");
     public final File settingsDir = new File(dir, "settings");
+    public final File pluginsDir = new File(dir, "plugins");
 
     public final FileConfig modulesConfig = new ModulesConfig(new File(dir, "modules.json"));
     public final FileConfig valuesConfig = new ValuesConfig(new File(dir, "values.json"));
@@ -66,6 +67,8 @@ public class FileManager extends MinecraftInstance {
 
         if(!settingsDir.exists())
             settingsDir.mkdir();
+
+        if (!pluginsDir.exists()) pluginsDir.mkdir();
     }
 
     /**

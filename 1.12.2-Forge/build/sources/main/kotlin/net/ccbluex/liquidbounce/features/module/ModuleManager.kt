@@ -193,6 +193,8 @@ class ModuleManager : Listenable {
         registerModule(Fucker)
         registerModule(ChestAura)
 
+        LiquidBounce.liquidLoader.loadModules(this)
+
         ClientUtils.getLogger().info("[ModuleManager] Loaded ${modules.size} modules.")
     }
 

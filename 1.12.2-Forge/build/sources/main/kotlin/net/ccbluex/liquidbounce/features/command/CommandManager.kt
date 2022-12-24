@@ -49,6 +49,8 @@ class CommandManager {
         registerCommand(PrefixCommand())
         registerCommand(ShortcutCommand())
         registerCommand(HideCommand())
+
+        LiquidBounce.liquidLoader.loadCommands(this)
     }
 
     /**

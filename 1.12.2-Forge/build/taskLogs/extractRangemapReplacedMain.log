@@ -1,8 +1,30 @@
-Unsupposrted library path: C:\Users\thefleksiscekcu\Desktop\LiquidBounce-Source\LiquidBounce-1.12.2-master\1.12.2-Forge\build\classes\java\api
-Unsupposrted library path: C:\Users\thefleksiscekcu\Desktop\LiquidBounce-Source\LiquidBounce-1.12.2-master\1.12.2-Forge\build\classes\kotlin\api
-Unsupposrted library path: C:\Users\thefleksiscekcu\Desktop\LiquidBounce-Source\LiquidBounce-1.12.2-master\1.12.2-Forge\build\resources\api
+Unsupposrted library path: E:\Java\LiquidLoader\1.12.2-Forge\build\classes\java\api
+Unsupposrted library path: E:\Java\LiquidLoader\1.12.2-Forge\build\classes\kotlin\api
+Unsupposrted library path: E:\Java\LiquidLoader\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 156 files
+Processing 160 files
+startProcessing "cn/afternode/liquidloader/JarFilter.java" md5: 3e8fdb60122066164ee89c077f9499b2
+endProcessing "cn/afternode/liquidloader/JarFilter.java"
+
+startProcessing "cn/afternode/liquidloader/LiquidLoader.java" md5: 9b4b122094e8ef1505199f94b64c7116
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.command cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleManager cannot be resolved
+    Compile Error! Pb(2) LiquidBounce cannot be resolved to a type
+    Compile Error! Pb(2) ModuleManager cannot be resolved to a type
+    Compile Error! Pb(2) CommandManager cannot be resolved to a type
+endProcessing "cn/afternode/liquidloader/LiquidLoader.java"
+
+startProcessing "cn/afternode/liquidloader/Plugin.java" md5: d62ef56193306d78646381cd93145d26
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.command cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleManager cannot be resolved
+    Compile Error! Pb(2) ModuleManager cannot be resolved to a type
+    Compile Error! Pb(2) CommandManager cannot be resolved to a type
+endProcessing "cn/afternode/liquidloader/Plugin.java"
+
+startProcessing "cn/afternode/liquidloader/PluginDescription.java" md5: 73c2d3c515c9aa86c3d538c107d82808
+endProcessing "cn/afternode/liquidloader/PluginDescription.java"
+
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 endProcessing "co/uk/hexeption/utils/OutlineUtils.java"
 
@@ -333,6 +355,19 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Disabl
     Compile Error! Pb(2) EventTarget cannot be resolved to a type
     Compile Error! Pb(634) The method getTag() of type Disabler must override or implement a supertype method
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Disabler.java"
+
+startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/IlIl111Ill1.java" md5: a8e2455308605488c244d7dec893b7d5
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.EventTarget cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.PacketEvent cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleInfo cannot be resolved
+    Compile Error! Pb(2) ModuleInfo cannot be resolved to a type
+    Compile Error! Pb(83) ModuleCategory cannot be resolved to a variable
+    Compile Error! Pb(2) Module cannot be resolved to a type
+    Compile Error! Pb(2) EventTarget cannot be resolved to a type
+    Compile Error! Pb(2) PacketEvent cannot be resolved to a type
+endProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/IlIl111Ill1.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/ItemTeleport.java" md5: 9a76274f10d49060a9810cb75c67bb90
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
@@ -667,109 +702,6 @@ startProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Telepo
     Compile Error! Pb(2) EventTarget cannot be resolved to a type
     Compile Error! Pb(634) The method getTag() of type Teleport must override or implement a supertype method
 endProcessing "net/ccbluex/liquidbounce/features/module/modules/exploit/Teleport.java"
-
-startProcessing "net/ccbluex/liquidbounce/features/module/modules/misc/AntiBot.java" md5: f413226ca21183adf06f619fff0ff350
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.AttackEvent cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.EventTarget cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.PacketEvent cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.WorldEvent cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleCategory cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.ModuleInfo cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.render.ColorUtils cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
-    Compile Error! Pb(2) ModuleInfo cannot be resolved to a type
-    Compile Error! Pb(83) ModuleCategory cannot be resolved to a variable
-    Compile Error! Pb(2) Module cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) ListValue cannot be resolved to a type
-    Compile Error! Pb(2) ListValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
-    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) FloatValue cannot be resolved to a type
-    Compile Error! Pb(2) FloatValue cannot be resolved to a type
-    Compile Error! Pb(634) The method onDisable() of type AntiBot must override or implement a supertype method
-    Compile Error! Pb(2) Module cannot be resolved to a type
-    Compile Error! Pb(2) EventTarget cannot be resolved to a type
-    Compile Error! Pb(2) PacketEvent cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(2) IPacket cannot be resolved to a type
-    Compile Error! Pb(83) mc2 cannot be resolved to a variable
-    Compile Error! Pb(2) EventTarget cannot be resolved to a type
-    Compile Error! Pb(2) EventTarget cannot be resolved to a type
-    Compile Error! Pb(2) IEntityLivingBase cannot be resolved to a type
-    Compile Error! Pb(50) LiquidBounce cannot be resolved
-    Compile Error! Pb(100) The method getState() is undefined for the type AntiBot
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) IntegerValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(2) ListValue cannot be resolved to a type
-    Compile Error! Pb(50) ColorUtils cannot be resolved
-    Compile Error! Pb(2) INetworkPlayerInfo cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(50) ColorUtils cannot be resolved
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-    Compile Error! Pb(2) BoolValue cannot be resolved to a type
-    Compile Error! Pb(50) mc cannot be resolved
-endProcessing "net/ccbluex/liquidbounce/features/module/modules/misc/AntiBot.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/misc/Spammer.java" md5: 403ee19201aae685c680facc941592ad
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
@@ -1189,7 +1121,7 @@ endProcessing "net/ccbluex/liquidbounce/features/special/AntiForge.java"
 startProcessing "net/ccbluex/liquidbounce/file/FileConfig.java" md5: 854176be268fd77dad0b6840e54ce050
 endProcessing "net/ccbluex/liquidbounce/file/FileConfig.java"
 
-startProcessing "net/ccbluex/liquidbounce/file/FileManager.java" md5: b10b04258cffff6857f35b06acdc06cf
+startProcessing "net/ccbluex/liquidbounce/file/FileManager.java" md5: 0b0d6861f22516b97a6d2977f209d0db
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.injection.backend.Backend cannot be resolved
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
@@ -1242,7 +1174,7 @@ startProcessing "net/ccbluex/liquidbounce/file/configs/ModulesConfig.java" md5: 
     Compile Error! Pb(50) LiquidBounce cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/file/configs/ModulesConfig.java"
 
-startProcessing "net/ccbluex/liquidbounce/file/configs/ValuesConfig.java" md5: 98a582144b2d6edc4a560724e48b7373
+startProcessing "net/ccbluex/liquidbounce/file/configs/ValuesConfig.java" md5: 23a41e92a6252c9069bec0653f84a1e8
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.Module cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.misc.LiquidChat cannot be resolved
@@ -1250,12 +1182,10 @@ startProcessing "net/ccbluex/liquidbounce/file/configs/ValuesConfig.java" md5: 9
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.special.BungeeCordSpoof cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.GuiBackground cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.GuiDonatorCape cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.value cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(83) BungeeCordSpoof cannot be resolved to a variable
     Compile Error! Pb(50) AutoReconnect cannot be resolved
-    Compile Error! Pb(50) GuiTheAltening cannot be resolved
     Compile Error! Pb(50) LiquidChat cannot be resolved
     Compile Error! Pb(50) GuiDonatorCape cannot be resolved
     Compile Error! Pb(50) GuiDonatorCape cannot be resolved
@@ -1267,7 +1197,6 @@ startProcessing "net/ccbluex/liquidbounce/file/configs/ValuesConfig.java" md5: 9
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(83) BungeeCordSpoof cannot be resolved to a variable
     Compile Error! Pb(50) AutoReconnect cannot be resolved
-    Compile Error! Pb(50) GuiTheAltening cannot be resolved
     Compile Error! Pb(50) LiquidChat cannot be resolved
     Compile Error! Pb(50) GuiDonatorCape cannot be resolved
     Compile Error! Pb(50) GuiDonatorCape cannot be resolved
@@ -1681,19 +1610,12 @@ endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiConne
 startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiContainer.java" md5: 7f51091e61af5cf87869714c5ab8d1c3
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiContainer.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiDisconnected.java" md5: 19969ffbdc725382a91610a34165f15d
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiDisconnected.java" md5: d3e7c740b2b2625c6334a40f3cbb2140
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.event.SessionEvent cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.special.AutoReconnect cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.login.LoginUtils cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.misc.RandomUtils cannot be resolved
-    Compile Error! Pb(50) GuiTheAltening cannot be resolved
-    Compile Error! Pb(50) GuiTheAltening cannot be resolved
-    Compile Error! Pb(50) GuiTheAltening cannot be resolved
-    Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
-    Compile Error! Pb(50) LiquidBounce cannot be resolved
-    Compile Error! Pb(2) SessionEvent cannot be resolved to a type
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(50) LoginUtils cannot be resolved
     Compile Error! Pb(50) RandomUtils cannot be resolved
@@ -2184,14 +2106,13 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/GuiAntiForge.java" md5: 3e12
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/ui/client/GuiAntiForge.java"
 
-startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.java" md5: 9389be756de1dc220b955c0756678759
+startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.java" md5: 1e68971f7116e2ca1dcc7e2da023b8c2
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
-    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.ui.client.altmanager.sub.altgenerator cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.login.LoginUtils cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.login.UserUtils cannot be resolved
@@ -2265,6 +2186,7 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.jav
     Compile Error! Pb(50) classProvider cannot be resolved
     Compile Error! Pb(50) representedScreen cannot be resolved
     Compile Error! Pb(50) classProvider cannot be resolved
+    Compile Error! Pb(50) classProvider cannot be resolved
     Compile Error! Pb(634) The method drawScreen(int, int, float) of type GuiAltManager must override or implement a supertype method
     Compile Error! Pb(2) IGuiButton cannot be resolved to a type
     Compile Error! Pb(2) IGuiButton cannot be resolved to a type
@@ -2287,7 +2209,7 @@ startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.jav
     Compile Error! Pb(634) The method drawBackground() of type GuiAltManager.GuiList must override or implement a supertype method
 endProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/GuiAltManager.java"
 
-startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiAdd.java" md5: ac578c312a169d3a209e61c4c78a674e
+startProcessing "net/ccbluex/liquidbounce/ui/client/altmanager/sub/GuiAdd.java" md5: 00a65b34662c05a51e1444260549af6d
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
@@ -3040,6 +2962,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/EntityUtils.java" md5: fd3f4f1c1
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.NoFriends cannot be resolved
+    Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.misc.AntiBot cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.misc.Teams cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.render.ColorUtils cannot be resolved
     Compile Error! Pb(2) IEntity cannot be resolved to a type
@@ -3047,6 +2970,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/EntityUtils.java" md5: fd3f4f1c1
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
     Compile Error! Pb(2) IEntityPlayer cannot be resolved to a type
+    Compile Error! Pb(50) AntiBot cannot be resolved
     Compile Error! Pb(50) LiquidBounce cannot be resolved
     Compile Error! Pb(2) NoFriends cannot be resolved to a type
     Compile Error! Pb(2) Teams cannot be resolved to a type
@@ -3567,7 +3491,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/render/shader/FramebufferShader.
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/utils/render/shader/FramebufferShader.java"
 
-startProcessing "net/ccbluex/liquidbounce/utils/render/shader/Shader.java" md5: ad14f68a7c2ea967dfecdfc254e51066
+startProcessing "net/ccbluex/liquidbounce/utils/render/shader/Shader.java" md5: dd24ac1c21932e77e0d55074198d7fc2
 endProcessing "net/ccbluex/liquidbounce/utils/render/shader/Shader.java"
 
 startProcessing "net/ccbluex/liquidbounce/utils/render/shader/shaders/BackgroundShader.java" md5: 602bae9d6fb5bac961169772b33a3907

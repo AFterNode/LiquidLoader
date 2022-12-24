@@ -5,6 +5,7 @@
  */
 package net.ccbluex.liquidbounce
 
+import cn.afternode.liquidloader.LiquidLoader
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import net.ccbluex.liquidbounce.api.Wrapper
@@ -55,6 +56,7 @@ object LiquidBounce {
     lateinit var eventManager: EventManager
     lateinit var fileManager: FileManager
     lateinit var scriptManager: ScriptManager
+    lateinit var liquidLoader: LiquidLoader
 
     // HUD & ClickGUI
     lateinit var hud: HUD
@@ -82,6 +84,11 @@ object LiquidBounce {
 
         // Create file manager
         fileManager = FileManager()
+
+        // Initialize LiquidLoader
+        ClientUtils.getLogger().info("LiquidLoader Core by AFterNode Productions")
+        liquidLoader = LiquidLoader()
+        liquidLoader.loadPlugins(fileManager.pluginsDir)
 
         // Crate event manager
         eventManager = EventManager()
