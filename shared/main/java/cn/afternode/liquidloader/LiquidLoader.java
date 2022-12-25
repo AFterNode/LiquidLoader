@@ -5,6 +5,7 @@
 
 package cn.afternode.liquidloader;
 
+import cn.afternode.liquidloader.commands.PluginCommand;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.features.command.CommandManager;
 import net.ccbluex.liquidbounce.features.module.ModuleManager;
@@ -119,6 +120,7 @@ public class LiquidLoader {
 
     public void loadCommands(CommandManager cm) {
         if (commandsLoaded) return;
+        cm.registerCommand(new PluginCommand());
         for (Plugin p: loadedPlugins) {
             try {
                 p.registerCommands(cm);
