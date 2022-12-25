@@ -34,6 +34,10 @@ public class LiquidLoader {
         loadedPlugins = new ArrayList<>();
     }
 
+    /**
+     * Load plugins from a folder
+     * @return Array of loaded plugins
+     */
     public Plugin[] loadPlugins(File folder) {
         if (!folder.exists() || !folder.isDirectory()) throw new IllegalArgumentException();
 
@@ -53,6 +57,9 @@ public class LiquidLoader {
         return plugin.toArray(new Plugin[0]);
     }
 
+    /**
+     * Load plugins from a jar file
+     */
     public Plugin loadPlugin(File pluginFile) throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         URLClassLoader ucl = new URLClassLoader(new URL[]{new URL("file:" + pluginFile.getAbsolutePath())}, LiquidBounce.class.getClassLoader());
 
