@@ -4,7 +4,7 @@ import net.ccbluex.liquidbounce.features.command.CommandManager;
 import net.ccbluex.liquidbounce.features.module.ModuleManager;
 
 public abstract class Plugin {
-    private PluginDescription pd;
+    private PluginDescription pd = null;
 
     public Plugin() {
     }
@@ -21,5 +21,10 @@ public abstract class Plugin {
 
     public PluginDescription getDescription() {
         return pd;
+    }
+
+    public void setPd(PluginDescription pd) {
+        if (pd != null) return;
+        this.pd = pd;
     }
 }

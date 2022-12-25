@@ -1,2 +1,4 @@
 rootProject.name = 'LiquidBounce-1.12.2'
 include '1.12.2-Forge'
+include 'ExamplePlugin'
+

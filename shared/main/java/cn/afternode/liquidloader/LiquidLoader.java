@@ -21,6 +21,8 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 public class LiquidLoader {
+    public static final boolean debug = false;
+
     private final Logger logger;
     private final List<Plugin> loadedPlugins;
 
@@ -45,7 +47,7 @@ public class LiquidLoader {
             try {
                 plugin.add(loadPlugin(pluginFile));
             } catch (Exception e) {
-                logger.error("Error loading jar: ");
+                logger.error("Error loading jar: ", e);
             }
         }
         return plugin.toArray(new Plugin[0]);
@@ -72,7 +74,8 @@ public class LiquidLoader {
             if (je.getName().endsWith(".class")) {
                 Class<?> c = ucl.loadClass(je.getName().split("\\.")[0].replace("/", "."));
                 pluginClasses.add(c);
-                if (c.getName() == pd.main) mainClass = c;
+                if (debug) logger.info("Load class " + c.getName() + " from entry " + je.getName());
+                if (c.getName().equals(pd.main)) mainClass = c;
             }
         }
         if (mainClass == null) {
@@ -83,9 +86,7 @@ public class LiquidLoader {
         if (!(o instanceof Plugin)) throw new IllegalArgumentException("Invalid plugin main class: " + pd.main);
         Plugin p = (Plugin) o;
 
-        Field f = p.getClass().getDeclaredField("pd");
-        f.setAccessible(true);
-        f.set(p, pd);
+        p.setPd(pd);
 
         logger.info("Loading " + pd.name + " v" + pd.version + ", by " + pd.author);
         p.onLoad();

@@ -6,3 +6,7 @@
 /bin/
 /.settings/
 /.gradle/
+/1.12.2-Forge/build/
+/PluginExample/build/
+/PluginExample/.gradle/
+/1.12.2-Forge/.gradle/
