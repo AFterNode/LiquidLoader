@@ -1,16 +1,19 @@
+/**
+ * LiquidLoader for Minecraft 1.12.2
+ * By AFterNode Productions
+ */
+
 package cn.afternode.liquidloader;
 
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.features.command.CommandManager;
 import net.ccbluex.liquidbounce.features.module.ModuleManager;
-import net.ccbluex.liquidbounce.file.FileManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -128,5 +131,23 @@ public class LiquidLoader {
 
     public Logger getLogger() {
         return logger;
+    }
+
+    /**
+     * @return All loaded plugins
+     */
+    public Plugin[] getPlugins() {
+        return loadedPlugins.toArray(new Plugin[0]);
+    }
+
+    /**
+     * Search plugin by name
+     * @return Result plugin, if not found returns null
+     */
+    public Plugin getPlugin(String name) {
+        for (Plugin p: loadedPlugins) {
+            if (p.getName().equals(name)) return p;
+        }
+        return null;
     }
 }
