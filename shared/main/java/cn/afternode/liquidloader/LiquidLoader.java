@@ -118,4 +118,8 @@ public class LiquidLoader {
         }
         commandsLoaded = true;
     }
+
+    public Logger getLogger() {
+        return logger;
+    }
 }
