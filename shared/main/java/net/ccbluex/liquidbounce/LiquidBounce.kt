@@ -49,6 +49,7 @@ object LiquidBounce {
     const val CLIENT_CLOUD = "https://cloud.liquidbounce.net/LiquidBounce"
 
     var isStarting = false
+    private var isStopping = false
 
     // Managers
     lateinit var moduleManager: ModuleManager
@@ -187,6 +188,11 @@ object LiquidBounce {
      * Execute if client will be stopped
      */
     fun stopClient() {
+        isStarting = true
+
+        // Shutdown plugins
+        liquidLoader.shutdown()
+
         // Call client shutdown
         eventManager.callEvent(ClientShutdownEvent())
 
@@ -195,6 +201,11 @@ object LiquidBounce {
 
         // Shutdown discord rpc
         clientRichPresence.shutdown()
+
+        isStopping = false
     }
 
+    fun isStopping(): Boolean {
+        return isStopping
+    }
 }

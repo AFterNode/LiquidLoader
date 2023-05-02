@@ -19,6 +19,8 @@ public abstract class Plugin {
 
     public void onLoad() {}
 
+    public void onShutdown() {}
+
     /**
      * You must register your modules here
      */

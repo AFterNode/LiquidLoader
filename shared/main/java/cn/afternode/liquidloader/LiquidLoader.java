@@ -108,6 +108,17 @@ public class LiquidLoader {
         return p;
     }
 
+    public void shutdown() {
+        if (!LiquidBounce.INSTANCE.isStopping()) throw new IllegalStateException("Client is not stopping");
+        for (Plugin p: loadedPlugins) {
+            try {
+                p.onShutdown();
+            } catch (Throwable t) {
+                logger.error("Error shutting down plugin: " + p.getName(), t);
+            }
+        }
+    }
+
     public void loadModules(ModuleManager mm) {
         if (modulesLoaded) return;
         for (Plugin p: loadedPlugins) {
