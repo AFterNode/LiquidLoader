@@ -5,10 +5,12 @@
  */
 package net.ccbluex.liquidbounce.ui.client.hud
 
+import cn.afternode.liquidloader.LiquidLoader
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
+import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.ui.client.hud.HUD.Companion.createDefault
 import net.ccbluex.liquidbounce.ui.client.hud.HUD.Companion.elements
 import net.ccbluex.liquidbounce.ui.client.hud.element.ElementInfo
@@ -57,6 +59,7 @@ class Config {
 
                     val type = jsonObject["Type"].asString
 
+                    LiquidBounce.liquidLoader.loadHudElements()
                     for (elementClass in elements) {
                         val classType = elementClass.getAnnotation(ElementInfo::class.java).name
 

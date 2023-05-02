@@ -3,6 +3,8 @@ package cn.afternode.liquidloader;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.features.command.CommandManager;
 import net.ccbluex.liquidbounce.features.module.ModuleManager;
+import net.ccbluex.liquidbounce.ui.client.hud.HUD;
+import net.ccbluex.liquidbounce.ui.client.hud.element.Element;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -26,6 +28,12 @@ public abstract class Plugin {
      * You must register your commands here
      */
     public void registerCommands(CommandManager cm) {}
+
+    public void registerHudElements() {}
+
+    protected final void registerHudElement(Class<? extends Element> element) {
+        HUD.addElement(element);
+    }
 
     public String getName() {
         return pd.name;

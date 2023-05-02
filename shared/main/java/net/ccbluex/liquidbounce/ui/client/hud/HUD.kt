@@ -35,6 +35,11 @@ open class HUD : MinecraftInstance() {
                 Radar::class.java
         )
 
+        @JvmStatic
+        fun addElement(e: Class<out Element>) {
+            elements[elements.size] = e
+        }
+
         /**
          * Create default HUD
          */

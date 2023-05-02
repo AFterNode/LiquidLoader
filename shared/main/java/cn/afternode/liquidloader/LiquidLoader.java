@@ -9,6 +9,7 @@ import cn.afternode.liquidloader.commands.PluginCommand;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.features.command.CommandManager;
 import net.ccbluex.liquidbounce.features.module.ModuleManager;
+import net.ccbluex.liquidbounce.ui.client.hud.HUD;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.yaml.snakeyaml.Yaml;
@@ -32,6 +33,7 @@ public class LiquidLoader {
 
     private boolean modulesLoaded = false;
     private boolean commandsLoaded = false;
+    private boolean hudElementsLoaded = false;
 
     public LiquidLoader() {
         logger = LogManager.getLogger("LiquidLoader");
@@ -129,6 +131,18 @@ public class LiquidLoader {
             }
         }
         commandsLoaded = true;
+    }
+
+    public void loadHudElements() {
+        if (hudElementsLoaded) return;
+        for (Plugin p: loadedPlugins) {
+            try {
+                p.registerHudElements();
+            } catch (Throwable t) {
+                logger.error("Error loading hud elements of plugin: " + p.getName(), t);
+            }
+        }
+        hudElementsLoaded = true;
     }
 
     public Logger getLogger() {
